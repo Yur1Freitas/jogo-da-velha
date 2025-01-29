@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet" />
+        <!-- CSS -->
+        <script defer type="module" src="./app/scripts/index.js"></script>
+        <link rel="stylesheet" href="./app/styles/index.css" />
+        <!-- Title -->
+        <title>Jogo da Velha</title>
+    </head>
+    <body>
+        <div id="game">
+            <div class="header">
+                <button class="next-round-btn">
+                    <img src="./app/icons/arrow-forward.svg" alt="Ícone de Resetar" />
+                    <p>Próxima</p>
+                </button>
+                <div class="game-title">
+                    <h1>Jogo da Velha</h1>
+                </div>
+                <button class="reset-btn">
+                    <img src="./app/icons/reload.svg" alt="Ícone de Resetar" />
+                    <p>Resetar</p>
+                </button>
+            </div>
+            <div class="board"></div>
+            <div class="scoreboard">
+                <div class="score score--user">
+                    <p class="score__name">Jogador</p>
+                    <p class="score__value">0</p>
+                </div>
+                <div class="score score--tie">
+                    <p class="score__name">Empates</p>
+                    <p class="score__value">0</p>
+                </div>
+                <div class="score score--bot">
+                    <p class="score__name">Bot</p>
+                    <p class="score__value">0</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
